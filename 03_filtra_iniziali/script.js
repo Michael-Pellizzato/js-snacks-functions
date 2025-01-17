@@ -4,10 +4,23 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function soloLettera (ciccio, lettera){
+    let newArray = []
+    for (let i = 0; i < ciccio.length; i++){
+        if (ciccio[i][0].toUpperCase() === lettera.toUpperCase()){
+            newArray.push(pippo[i])
+        }
+    }
 
+    if (newArray.length === 0){
+        console.log(`non ci sono nomi che iniziano con ${lettera}`)
+    }else{
+        return newArray
+    }
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+cpnsole.log(soloLettera(names, "A"))
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
