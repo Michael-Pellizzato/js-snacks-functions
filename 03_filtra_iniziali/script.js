@@ -8,7 +8,7 @@ function soloLettera (ciccio, lettera){
     let newArray = []
     for (let i = 0; i < ciccio.length; i++){
         if (ciccio[i][0].toUpperCase() === lettera.toUpperCase()){
-            newArray.push(pippo[i])
+            newArray.push(ciccio[i])
         }
     }
 
